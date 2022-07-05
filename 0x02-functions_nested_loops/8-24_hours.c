@@ -10,7 +10,7 @@
 void jack_bauer(void)
 {
 	int h, m, i, j, k, l;
-	
+
 	for (h = 0; h < 24; h++)
 	{
 		i = h / 10;
