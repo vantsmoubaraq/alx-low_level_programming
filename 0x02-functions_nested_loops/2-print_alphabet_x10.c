@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * print_alphabet_x10 -print_alphabet_x10
+ * print_alphabet_x10 - print letters of the alphabet 10 times
  *
  * Description:print_alphabet_x10 - print letters a to z
  * Return -Always 0
