@@ -22,7 +22,7 @@ int main(void)
 			b = c;
 			c = a + b;
 		}
+	}
 		printf("%u\n", s);
 		return (0);
-	}
 }
