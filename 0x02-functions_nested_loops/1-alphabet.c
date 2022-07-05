@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: Nothing
+ * main - check the code
+ * Return: Always zero
  */
-void main(void)
+void print_alphabet(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
@@ -11,4 +11,10 @@ for (c = 'a'; c <= 'z'; c++)
 putchar(c);
 }
 putchar('\n');
+}
+
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }
