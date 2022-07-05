@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet - print letter a to z
  * Return: Always zero
  */
 void print_alphabet(void)
