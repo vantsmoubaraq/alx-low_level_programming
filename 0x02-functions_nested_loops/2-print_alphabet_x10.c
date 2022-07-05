@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -11,21 +12,14 @@
 void print_alphabet_x10(void)
 {
 	char counter;
-
-	for (counter = 'a'; counter <= 'z'; counter++)
-	{
-		putchar(counter);
-	}
-	putchar('\n');
-}
-
-int main(void)
-{
-	int i = 10;
+	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-		print_alphabet_x10();
+	for (counter = 'a'; counter <= 'z'; counter++)
+	{
+		_putchar(counter);
 	}
-	return (0);
+		_putchar('\n');
+	}
 }
