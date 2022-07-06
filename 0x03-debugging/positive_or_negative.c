@@ -11,8 +11,9 @@
 /* betty style doc for function main goes there */
 
 /**
- *main - main function
+ *positive_or_negative - produces negative or positive number
  *No Description:
+ *@n: number to be tested
  *Return: 0
  */
 
