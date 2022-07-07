@@ -1,28 +1,24 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 1-14 10x
+ * more_numbers - prints 10 times the numbers
  *
- * Return: Always 0
+ * Return: a serie of number 10 times
  */
 
 void more_numbers(void)
 {
-	int cycle, num;
+	int a, b;
 
-	for (cycle = 1; cycle <= 10; cycle++)
+	for (a = 0 ; a <= 9 ; a++)
 	{
-		for (num = 0; num <= 14; num++)
+		for (b = 0 ; b <= 14 ; b++)
 		{
-			if (num < 10)
+			if (b >= 10)
 			{
-				_putchar (num + '0');
+				_putchar(b / 10 + '0');
 			}
-			else
-			{
-				_putchar(num / 10 + '0');
-				_putchar(num % 10 + '0');
-			}
+			_putchar(b % 10 + '0');
 		}
 		_putchar('\n');
 	}
