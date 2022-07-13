@@ -11,8 +11,8 @@
 void print_buffer(char *b, int size)
 {
 	int o, j, i;
-	o = 0;
 
+	o = 0;
 	if (size <= 0)
 	{
 		printf("\n");
@@ -43,18 +43,11 @@ void print_buffer(char *b, int size)
 
 			if (c < 32 || c > 132)
 			{
-																																			c = '.';
-
-																																						}
-
-																													printf("%c", c);
-
-																															}
-
-																		printf("\n");
-
-																				o += 10;
-
-																					}
-
+				c = '.';
+			}
+			printf("%c", c);
+		}
+		printf("\n");
+		o += 10;
+	}
 }
