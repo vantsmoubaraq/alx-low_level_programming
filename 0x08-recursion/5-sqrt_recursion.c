@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * square_root - find the natural square root
  * @i: number
