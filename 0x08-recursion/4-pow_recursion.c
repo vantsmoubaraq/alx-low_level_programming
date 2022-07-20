@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _pow_recursion - returns the value of x raised of the power of y
  * @x: base
