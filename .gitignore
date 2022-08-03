@@ -1,3 +1,5 @@
 *main.c
 *.swp
 *.swo
+*.o
+*.a
