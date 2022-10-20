@@ -3,7 +3,7 @@
 /**
  * hash_table_delete - free hash table
  *
- * @ht - hash table
+ * @ht: hash table
  *
  * Return: void
  */
