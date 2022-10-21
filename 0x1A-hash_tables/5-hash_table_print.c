@@ -14,9 +14,8 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *current;
 	int flag = 0;
 
-	if (ht == NULL)
-		return;
-
+	if (ht != NULL)
+	{
 	printf("{");
 
 	while (idx < ht->size)
@@ -37,5 +36,5 @@ void hash_table_print(const hash_table_t *ht)
 	}
 
 	printf("}\n");
-
+	}
 }
