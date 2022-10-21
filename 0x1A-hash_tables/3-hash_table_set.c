@@ -13,7 +13,7 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *new;
+	hash_node_t *new, *current;
 	unsigned long int index;
 
 	if (key == NULL)
@@ -39,6 +39,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
+		current = ht->array[index];
+
+		while(current)
+		{
+		if (strcmp(current->key, key) == 0)
+		{
+			current->value = strdup(value);
+			return (1);
+		}
+		current = current->next;
+		}
+
 		new->next = ht->array[index];
 		ht->array[index] = new;
 	}
