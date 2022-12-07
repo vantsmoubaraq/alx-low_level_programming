@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Calculate perimeter of a grid island"""
 
+"""Calculate perimeter of a grid island"""
 
 def island_perimeter(grid):
     """Calculate perimeter of a grid island. Grid is a list of equal sized
