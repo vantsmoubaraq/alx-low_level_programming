@@ -1,2 +1,3 @@
+# target compiles all files
 all:
-    gcc -o school school.c main.c
+	gcc main.c school.c -o school

@@ -1,0 +1,21 @@
+# target compiles all files
+# cleans
+
+CC = gcc
+SRC = school.c main.c
+OBJ = $(patsubst %.c, %.o, $(SRC))
+NAME = school
+RM = rm -f
+
+all:$(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *.swp *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean:clean oclean
+
+re:fclean all
