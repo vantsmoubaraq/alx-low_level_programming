@@ -1,27 +1,25 @@
 #!/usr/bin/python3
+"""
+returns the perimeter of the island described in grid
+"""
 
-"""Calculate perimeter of a grid island"""
 
 def island_perimeter(grid):
-    """Calculate perimeter of a grid island. Grid is a list of equal sized
-    lists.
     """
-    height = len(grid) - 1
-    if height == 0:
-        return 0
-    width = len(grid[0]) - 1
-    if width == 0:
-        return 0
-    perimeter = 0
-    for x in range(width + 1):
-        for y in range(height + 1):
-            if grid[y][x] == 1:
-                if x == width or grid[y][x + 1] == 0:
-                    perimeter += 1
-                if x == 0 or grid[y][x - 1] == 0:
-                    perimeter += 1
-                if y == height or grid[y + 1][x] == 0:
-                    perimeter += 1
-                if y == 0 or grid[y - 1][x] == 0:
-                    perimeter += 1
-    return perimeter
+    count adyacent free sides
+    """
+    count = 0
+    if grid is None:
+        return count
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j] == 1:
+                if i == 0 or grid[i - 1][j] == 0:
+                    count += 1
+                if j == 0 or grid[i][j - 1] == 0:
+                    count += 1
+                if i == len(grid) - 1 or grid[i + 1][j] == 0:
+                    count += 1
+                if j == len(grid[i]) - 1 or grid[i][j + 1] == 0:
+                    count += 1
+    return(count)
